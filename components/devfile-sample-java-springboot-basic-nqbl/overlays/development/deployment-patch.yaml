@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-java-springboot-basic-nqbl
+  namespace: burrzinga-hac-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/burrzinga-hac-tenant/my-app/devfile-sample-java-springboot-basic-nqbl@sha256:194d014f1256a17fb2b652232681c11d095f52d813bedafcb98222817460a7c8
+        name: my-java-springboot
+        resources: {}
+status: {}
